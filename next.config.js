@@ -4,13 +4,13 @@ const nextConfig = {
       return [
         {
           // Routes this applies to
-          source: "/api/(.*)",
+          source: "/(.*)",
           // Headers
           headers: [
             // Allow for specific domains to have access or * for all
             {
               key: "Access-Control-Allow-Origin",
-              value: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+              value: "*",
               // DOES NOT WORK
               // value: process.env.ALLOWED_ORIGIN,
             },
