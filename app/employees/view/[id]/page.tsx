@@ -1,7 +1,7 @@
 
 import { getOne } from "@/api/getOne";
 import { EmployeesCRU } from "../../components/EmployeeFormCRU";
-import { getAll } from "@/api";
+import { getAll } from "@/api/getAll";
 
 const ViewEmployee = async ({ params }: { params: { id: string } }) => {
     const { id } = params;

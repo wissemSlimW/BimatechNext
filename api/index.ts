@@ -1,5 +1,0 @@
-export { getAll } from './getAll'
-export { getOne } from './getOne'
-export { handleAdd } from './handleAdd'
-export { handleDelete } from './handleDelete'
-export { handleEdit } from './handleEdit'

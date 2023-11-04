@@ -1,5 +1,5 @@
 
-import { getOne } from "@/api";
+import { getOne } from "@/api/getOne";
 
 import { SkillsCRU } from "../../components/SkillFormCRU";
 

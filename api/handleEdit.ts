@@ -8,7 +8,7 @@ export const handleEdit = async <T>({ _id, collection, data, handleSuccess, hand
 
 }) => {
     try {
-        const res = await fetch(`/api/${collection}/${_id}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/${collection}/${_id}`, {
             method: "PUT",
             headers: {
                 "Content-type": "application/json",

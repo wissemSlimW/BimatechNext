@@ -1,5 +1,6 @@
 "use client"
-import { handleAdd, handleEdit } from '@/api/'
+import { handleAdd } from '@/api/handleAdd'
+import {  handleEdit } from '@/api/handleEdit'
 import { Button, Checkbox, Grid, TextField } from '@mui/material'
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'

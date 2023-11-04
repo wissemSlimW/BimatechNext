@@ -1,6 +1,6 @@
 
 import { EmployeesCRU } from "../components/EmployeeFormCRU";
-import { getAll } from "@/api";
+import { getAll } from "@/api/getAll";
 
 const AddEmployee = async() => {
     const skills = await getAll<Skill>({ collection: 'skills' })

@@ -1,5 +1,6 @@
 "use client"
-import { handleAdd, handleEdit } from '@/api/'
+import { handleAdd } from '@/api/handleAdd'
+import { handleEdit } from '@/api/handleEdit'
 import { Autocomplete, Button, Checkbox, Grid, TextField } from '@mui/material'
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import { DatePicker } from '@mui/x-date-pickers/DatePicker'
@@ -130,9 +131,9 @@ export const EmployeesCRU = ({ mode, employee, skills }: {
                             <Grid container item xs={12} md={6} alignItems={"center"}>
                                 <Grid item xs={12} md={6}>BirthDate :</Grid>
                                 <Grid item xs={12} md={6}>
-                                    {mode === "view" ?  format(new Date(formik.values.birthDate),'dd/MM/yyyy') :
+                                    {mode === "view" ? format(new Date(formik.values.birthDate), 'dd/MM/yyyy') :
                                         <>
-                                            <DatePicker  value={new Date(formik.values.birthDate)} onChange={(val) => formik.setFieldValue("birthDate", val)} sx={{ width: "100%" }} />
+                                            <DatePicker value={new Date(formik.values.birthDate)} onChange={(val) => formik.setFieldValue("birthDate", val)} sx={{ width: "100%" }} />
                                             {getFormErrorMessage(formik, 'birthDate')}  </>
                                     }
                                 </Grid>
@@ -180,9 +181,9 @@ export const EmployeesCRU = ({ mode, employee, skills }: {
                             <Grid container item xs={12} md={6} alignItems={"center"}>
                                 <Grid item xs={12} md={6}>Hiring date :</Grid>
                                 <Grid item xs={12} md={6}>
-                                    {mode === "view" ? format(new Date(formik.values.hiringDate),'dd/MM/yyyy') :
+                                    {mode === "view" ? format(new Date(formik.values.hiringDate), 'dd/MM/yyyy') :
                                         <>
-                                            <DatePicker  value={new Date(formik.values.hiringDate)} onChange={(val) => formik.setFieldValue("hiringDate", val)} sx={{ width: "100%" }} />
+                                            <DatePicker value={new Date(formik.values.hiringDate)} onChange={(val) => formik.setFieldValue("hiringDate", val)} sx={{ width: "100%" }} />
                                             {getFormErrorMessage(formik, 'hiringDate')}
                                         </>
                                     }

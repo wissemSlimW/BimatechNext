@@ -8,7 +8,7 @@ import { ActionBlock } from '@/components/TableGrid/ActionsBlock';
 import { Delete, Edit, Visibility, ArrowBack } from '@mui/icons-material';
 import { Button, Grid ,IconButton} from '@mui/material';
 import { useRouter } from 'next/navigation';
-import { handleDelete } from "@/api";
+import { handleDelete } from "@/api/handleDelete";
 
 export const Table = ({ data }: {
     data: Employee[]
