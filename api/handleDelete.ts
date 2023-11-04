@@ -7,7 +7,7 @@ export const handleDelete = ({ _id, collection, handleSuccess, handleError }: {
 
 }) => {
 
-    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/${collection}/${_id}`, {
+    fetch(`/api/${collection}/${_id}`, {
         method: "DELETE",
     }).then((res) => {
         handleSuccess?.(res);

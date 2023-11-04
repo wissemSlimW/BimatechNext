@@ -8,7 +8,7 @@ export const handleAdd = async <T>({ collection, data, handleSuccess, handleErro
 }) => {
 
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/${collection}`, {
+        const res = await fetch(`/api/${collection}`, {
             method: "POST",
             headers: {
                 "Content-type": "application/json",

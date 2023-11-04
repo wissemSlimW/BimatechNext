@@ -7,7 +7,7 @@ export const getOne = async <T>({ collection,_id, handleSuccess, handleError }: 
 
 }) => {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/${collection}/${_id}`,{
+        const res = await fetch(`/api/${collection}/${_id}`,{
             cache: "no-store",
           });
 
