@@ -24,6 +24,10 @@ const nextConfig = {
               key: "Access-Control-Allow-Headers",
               value: "Content-Type, Authorization",
             },
+             {
+              key: "Cache-Control",
+              value: "private, no-cache, no-store, max-age=0, must-revalidate",
+            },
           ],
         },
       ];
