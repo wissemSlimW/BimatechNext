@@ -10,7 +10,7 @@ const nextConfig = {
             // Allow for specific domains to have access or * for all
             {
               key: "Access-Control-Allow-Origin",
-              value: "*",
+              value: process.env.NEXT_PUBLIC_BASE_URL,
               // DOES NOT WORK
               // value: process.env.ALLOWED_ORIGIN,
             },
