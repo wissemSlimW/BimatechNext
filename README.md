@@ -1,5 +1,11 @@
 Clone down this repository. You will need node and npm installed globally on your machine.
 
+add file on your project root named ".env.local"
+then write in side it :
+
+MONGODB_URI=mongodb+srv://wissemslimw:MIfnBRonxlbWiMna@cluster0.i6aej2x.mongodb.net/
+NEXT_PUBLIC_BASE_URL='http://localhost:3000'
+
 first run:
 # npm i pnpm -g
 
