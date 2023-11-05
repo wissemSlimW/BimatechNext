@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Cabin } from 'next/font/google'
 import './globals.css'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import connectMongoDB from '@/libs/mongodb';
 
-const inter = Inter({ subsets: ['latin'] })
+const cabin = Cabin({
+  subsets: ["latin"], weight: "400",
+  variable: '--font-Cabin'
+});
 connectMongoDB()
 
 export const metadata: Metadata = {
@@ -21,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className={inter.className}>
+      <body className={cabin.className}>
         <ToastContainer />
         {children}
       </body>
